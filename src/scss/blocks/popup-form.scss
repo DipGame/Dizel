@@ -1,0 +1,198 @@
+.popupForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    width: 100%;
+    max-width: max-content;
+    padding: 0 20px;
+}
+
+.popupForm .popup__container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    width: auto;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 490px;
+    padding: 24px;
+    max-height: 70vh;
+    overflow-y: scroll;
+    box-shadow: 0px 20px 25px -4px #121A2B1A;
+
+    .popupForm-title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-bottom: 24px;
+    }
+
+    p:not(.checkbox p) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        margin-bottom: 36px;
+        color: #767D83;
+    }
+
+    .inputs_cont {
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 24px;
+
+        input {
+            border: 1px solid #DADCDE;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .input_cont {
+            width: 100%;
+
+            .h3 {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                margin-bottom: 12px;
+                color: #767D83;
+            }
+
+            span {
+                display: none;
+                margin-bottom: 6px;
+                margin-top: 12px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #DC2222;
+            }
+        }
+
+        .err {
+
+            input {
+                border: 1px solid #DC2222;
+            }
+
+            span {
+                display: block;
+            }
+        }
+
+    }
+
+    .checkbox {
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 24px;
+
+        .check-box-btn {
+            transform: none;
+            position: static;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+
+            * {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .button {
+        width: 100%;
+        min-height: 50px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+}
+
+.popupForm .popup__container img {
+    object-fit: contain;
+    object-position: center;
+    /* border: 50px solid #013C38; */
+    width: 100%;
+    max-width: min-content;
+    max-height: 70vh;
+    display: flex;
+    position: relative;
+}
+
+.popupForm .popup__container .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.popupForm .popup__container .close-btn:hover path {
+    opacity: 0.5;
+}
+
+.popupForm.open {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.popupForm .popup__container img.mob {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .popupForm .popup__container img.mob {
+        display: block;
+    }
+
+    .popupForm .popup__container img.desk {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 991px) {
+    .popupForm .popup__container {
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .popupForm .popup__container::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}

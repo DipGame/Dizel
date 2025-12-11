@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="./fonts/Inter.css" />
+
+    <link rel="stylesheet" href="./css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/nouislider.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2e485074-4e7a-4d9b-9e83-432aa96ddebf&lang=ru_RU"
+        type="text/javascript"></script>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.fancybox.js"></script>
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+</head>
+
+<body class="v2">
+    <div class="invise" id="isAdmin"></div>
+
+    @@include('blocks/overlay.html')
+    @@include('blocks/popup-form.html')
+    @@include('blocks/popupCheck.html')
+    @@include('blocks/load.html')
+    @@include('blocks/bottom-fixed-menu.html')
+    @@include('blocks/header.html')
+    <main>
+        <div class="bread flex padding v2" id="bread">
+            <ul class="def_div">
+                <li>
+
+                    <a href="/" title="Главная" itemprop="item">
+                        Главная
+                    </a>
+                </li>
+                <li>/</li>
+                <li>
+                    Насос масляный 8943904142 (с выступом) 6HK1/4HK1
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-title v2">
+            <h1 class="title ">
+                Насос масляный 8943904142 (с выступом) 6HK1/4HK1
+            </h1>
+        </div>
+
+        @@include('blocks/detail-top.html')
+        @@include('blocks/detail-tabs.html')
+        @@include('blocks/detail-zapchasti.html')
+    </main>
+    @@include('blocks/footer.html')
+    <script src="./js/addSwiper.js"></script>
+    <script src="./js/copyElements.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+
+</html>

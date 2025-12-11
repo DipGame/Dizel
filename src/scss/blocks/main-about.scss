@@ -1,0 +1,213 @@
+.main-about {
+    border-radius: 16px;
+    background-color: #F4F5F6;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .copy-cont {
+        display: none;
+    }
+
+    .main-about-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+
+        .h2 {
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 28px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+
+            span {
+                font-weight: 600;
+                font-style: Semi Bold;
+                font-size: 28px;
+                leading-trim: NONE;
+                line-height: 130%;
+                letter-spacing: 0%;
+                color: var(--link-color);
+            }
+        }
+
+        .subtitle {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+
+    .left-cont {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .button {
+            background-color: #121314;
+            width: 100%;
+            max-width: 159px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            min-height: 50px;
+
+            &:hover {
+                background-color: #C70D0D;
+                color: var(--white-color);
+            }
+        }
+    }
+
+    .right-cont {
+        img {
+            border-radius: 16px;
+            aspect-ratio: 640/388;
+            object-fit: cover;
+            width: 100%;
+            object-position: center;
+        }
+    }
+
+    .help-cont-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+
+
+    }
+}
+
+.main-about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+        border-radius: 10px;
+        padding: 12px 16px;
+        background-color: #FFF;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        img {
+            max-width: 30px;
+            max-height: 30px;
+            min-height: 30px;
+            min-width: 30px;
+            object-fit: contain;
+        }
+
+        .text-cont {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            span {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+            }
+
+            .default {
+                margin: 0;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0%;
+                color: #767D83;
+
+                * {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: 0%;
+                    color: #767D83;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-about {
+        .main-about-top {
+            .subtitle {
+
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .main-about .main-about-top .subtitle {
+        display: none;
+    }
+
+    .main-about .help-cont-1 {
+        grid-template-columns: 1fr;
+
+        .right-cont {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .copy-cont {
+                display: block;
+
+                .subtitle {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    letter-spacing: 0%;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-about .main-about-top {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    .main-about-section {
+        padding: 0;
+    }
+
+    .main-about {
+        padding: 24px var(--def-padding);
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-about {
+        gap: 24px;
+    }
+
+    .main-about .main-about-top .h2 {
+        font-size: 20px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .main-about .right-cont img {
+        aspect-ratio: 343/293;
+    }
+}

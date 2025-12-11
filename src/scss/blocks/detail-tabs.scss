@@ -1,0 +1,220 @@
+.detail-tabs {
+    margin-bottom: 40px;
+
+    .last-text {
+        display: none;
+    }
+
+    .default {
+        margin-bottom: 0;
+    }
+
+    .description {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin: 0;
+        flex-direction: row;
+
+        .left {
+            width: 100%;
+            max-width: 771px;
+
+            &.default {
+                margin: 0;
+                gap: 25px;
+            }
+        }
+    }
+
+    .description-list {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 45px;
+
+        li {
+            list-style: none;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #737D8C;
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 10px 20px;
+
+            * {
+                color: var(--text-color);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0%;
+            }
+
+            .value-dash {
+                display: none;
+            }
+        }
+    }
+
+    .scheme {
+        background-color: #F4F5F6;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        width: 100%;
+        max-width: 553px;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .scheme-text-mob {
+            display: none;
+        }
+
+        .scheme-text-desc {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            opacity: .8;
+
+            span {
+                border-radius: 50%;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0%;
+                white-space: nowrap;
+                color: var(--white-color);
+                background-color: var(--link-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 24px;
+                max-height: 24px;
+                min-height: 24px;
+                min-width: 24px;
+            }
+        }
+
+    }
+
+    .description-text {
+        margin: 0;
+        background-color: #F4F5F6;
+        gap: 16px;
+        font-size: 14px;
+        padding: 24px;
+        border-radius: 8px;
+        height: fit-content;
+
+        * {
+            font-size: 14px;
+        }
+
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    .detail-tabs .description {
+        flex-direction: column;
+
+        .left,
+        .right {
+            width: 100%;
+            max-width: none;
+        }
+    }
+
+    .detail-tabs .description-text {
+        br {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .detail-tabs {
+        margin-bottom: 24px;
+
+        .last-text {
+            display: block;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 140%;
+            letter-spacing: 0%;
+            color: #999999;
+            margin-top: 25px;
+        }
+
+        .default {
+            margin-bottom: 0;
+        }
+
+        .description-list {
+            gap: 0px;
+            margin-bottom: 0;
+
+            li {
+                font-size: 14px;
+                display: block;
+                color: var(--text-color);
+
+                * {
+                    font-size: 14px;
+                    color: var(--text-color);
+                }
+
+                .value-dash {
+                    display: contents;
+                }
+            }
+        }
+
+        .scheme {
+            padding: 0;
+            border-radius: 0;
+            flex-direction: column-reverse;
+            gap: 15px;
+            max-width: none;
+            width: 100%;
+            align-items: start;
+            background: none;
+
+            .scheme-text-mob {
+                display: block;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                letter-spacing: 0%;
+            }
+
+            .scheme-text-desc {
+                display: none;
+            }
+        }
+
+        .description-text {
+            padding: 16px;
+        }
+    }
+}

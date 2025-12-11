@@ -1,0 +1,14 @@
+.main-stocks {
+    padding: 40px 0 80px;
+}
+
+
+@media (max-width: 500px) {
+    .main-stocks {
+        padding: 60px 0 36px;
+    }
+
+    .main-stocks-section {
+        padding: 0;
+    }
+}

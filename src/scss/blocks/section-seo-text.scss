@@ -1,0 +1,13 @@
+.section-seo-text {
+    padding: 60px 0;
+
+    .default {
+        margin: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .section-seo-text {
+        padding: 90px 0 60px;
+    }
+}

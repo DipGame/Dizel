@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="./fonts/Inter.css" />
+
+    <link rel="stylesheet" href="./css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/nouislider.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2e485074-4e7a-4d9b-9e83-432aa96ddebf&lang=ru_RU"
+        type="text/javascript"></script>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.fancybox.js"></script>
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+</head>
+
+<body>
+    <div class="invise" id="isAdmin"></div>
+
+    <div class="overlay "></div>
+    <div class="popupForm form-all " id="popup-call-back">
+    <form class="popup__container form">
+        <svg class="close-btn" width="60" height="60" viewBox="0 0 60 60" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="60" fill="none" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M27.5843 30L10 12.4157L12.4157 10L30 27.5843L47.5844 10L50 12.4157L32.4157 30L49.9436 47.5263L47.5263 49.9436L30 32.4157L12.4157 50L10 47.5844L27.5843 30Z"
+                fill="#767D83" />
+        </svg>
+        <div class="popupForm-title">
+            Заказать звонок
+        </div>
+        <p>
+            Представьтесь, мы вам перезвоним.
+        </p>
+        <div class="inputs_cont">
+            <div class="input_cont">
+                <div class="h3">
+                    Ваше имя *
+                </div>
+                <input type="text" name="name">
+                <span>
+                    Неправильный формат поля
+                </span>
+            </div>
+            <div class="input_cont">
+                <div class="h3">
+                    Телефон *
+                </div>
+                <input type="text" name="phone">
+                <span>
+                    Неправильный формат поля
+                </span>
+            </div>
+        </div>
+        <div class="checkbox v2" data-processing="">
+            <div class="check-box-btn"> <img class="check" src="./img/Checked.svg" alt="check"></div>
+            <p>
+                Продолжая, вы соглашаетесь с <a href="">Политикой конфиденциальности и офертой</a>
+            </p>
+        </div>
+        <button class="button" type="submit">
+            Отправить
+        </button>
+    </form>
+</div>
+    <div class="popupCheck">
+    <div class="popup__container"><svg class="close-btn" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="60" fill="none"></rect>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5843 30 10 12.4157 12.4157 10 30 27.5843 47.5844 10 50 12.4157 32.4157 30 49.9436 47.5263 47.5263 49.9436 30 32.4157 12.4157 50 10 47.5844 27.5843 30Z" fill="#222"></path>
+        </svg>
+        <div class="h2"></div>
+    </div>
+</div>
+    <div id="load-svg" class="load_svg">
+    <svg class="" id="" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="64px" height="64px" viewBox="0 0 128 128"
+        xml:space="preserve">
+        <g>
+            <linearGradient id="linear-gradient">
+                <stop offset="0%" stop-color="#DC2222"></stop>
+                <stop offset="50%" stop-color="#FFF"></stop>
+            </linearGradient>
+            <path
+                d="M63.85 0A63.85 63.85 0 1 1 0 63.85 63.85 63.85 0 0 1 63.85 0zm.65 19.5a44 44 0 1 1-44 44 44 44 0 0 1 44-44z"
+                fill="url(#linear-gradient)" fill-rule="evenodd"></path>
+            <animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1080ms"
+                repeatCount="indefinite"></animateTransform>
+        </g>
+    </svg>
+</div>
+    <div class='bottom-fixed-menu'>
+    <a href="/" class="cont ">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M20.3659 19.436C20.3659 19.9493 19.9497 20.3655 19.4363 20.3655H4.56381C4.05045 20.3655 3.63428 19.9493 3.63428 19.436V9.66576C3.63428 9.37892 3.76671 9.10815 3.99313 8.93204L11.4294 3.14829C11.7651 2.88722 12.2351 2.88722 12.5707 3.14829L20.007 8.93204C20.2334 9.10815 20.3659 9.37892 20.3659 9.66576V19.436ZM18.5068 18.5064V10.1204L12.0001 5.0596L5.49334 10.1204V18.5064H18.5068ZM7.35241 14.7883H16.6477V16.6474H7.35241V14.7883Z"
+                fill="white" fill-opacity="0.5" />
+        </svg>
+        <p>
+            Главная
+        </p>
+    </a>
+    <div class="cont active" data-catalog-mob-open-btn>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M3.63428 4.56375H20.3659V6.42282H3.63428V4.56375ZM3.63428 11.0705H14.7887V12.9295H3.63428V11.0705ZM3.63428 17.5772H20.3659V19.4363H3.63428V17.5772Z"
+                fill="white" fill-opacity="0.6" />
+        </svg>
+        <p>
+            Каталог
+        </p>
+    </div>
+    <div class="cont" data-search-focus>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.9013 16.3983L21.1839 19.6809L19.8693 20.9954L16.5868 17.7129C15.1554 18.858 13.3401 19.5431 11.3658 19.5431C6.74787 19.5431 3 15.7952 3 11.1773C3 6.5594 6.74787 2.81152 11.3658 2.81152C15.9837 2.81152 19.7316 6.5594 19.7316 11.1773C19.7316 13.1516 19.0465 14.9669 17.9013 16.3983ZM16.0364 15.7086C17.173 14.5372 17.8725 12.9393 17.8725 11.1773C17.8725 7.58235 14.9608 4.67059 11.3658 4.67059C7.77082 4.67059 4.85906 7.58235 4.85906 11.1773C4.85906 14.7723 7.77082 17.684 11.3658 17.684C13.1278 17.684 14.7257 16.9846 15.8971 15.8479L16.0364 15.7086Z"
+                fill="white" fill-opacity="0.6" />
+        </svg>
+        <p>
+            Поиск
+        </p>
+    </div>
+    <div class="cont">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M4.56785 6.81008L1.55371 3.79594L2.86827 2.48138L5.8824 5.49552H20.0501C20.5635 5.49552 20.9796 5.91168 20.9796 6.42505C20.9796 6.51552 20.9664 6.60549 20.9405 6.69215L18.7096 14.1284C18.5916 14.5215 18.2297 14.7908 17.8192 14.7908H6.42691V16.6499H16.6518V18.509H5.49738C4.98401 18.509 4.56785 18.0928 4.56785 17.5794V6.81008ZM6.42691 7.35459V12.9318H17.1276L18.8008 7.35459H6.42691ZM5.96215 22.2271C5.1921 22.2271 4.56785 21.6028 4.56785 20.8328C4.56785 20.0628 5.1921 19.4385 5.96215 19.4385C6.7322 19.4385 7.35645 20.0628 7.35645 20.8328C7.35645 21.6028 6.7322 22.2271 5.96215 22.2271ZM17.1166 22.2271C16.3465 22.2271 15.7223 21.6028 15.7223 20.8328C15.7223 20.0628 16.3465 19.4385 17.1166 19.4385C17.8866 19.4385 18.5109 20.0628 18.5109 20.8328C18.5109 21.6028 17.8866 22.2271 17.1166 22.2271Z"
+                fill="white" fill-opacity="0.6" />
+        </svg>
+        <p>
+            Корзина
+        </p>
+    </div>
+    <div class="cont">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M12.0008 5.05503C14.1843 3.09509 17.5585 3.16016 19.6617 5.26774C21.7649 7.37532 21.8371 10.7331 19.881 12.923L11.9998 20.8166L4.11876 12.923C2.16272 10.7331 2.23583 7.37002 4.33811 5.26774C6.44277 3.16308 9.81104 3.09218 12.0008 5.05503ZM18.3458 6.58093C16.9524 5.18462 14.7026 5.12798 13.2427 6.43849L12.0017 7.55242L10.76 6.43937C9.29588 5.12702 7.05021 5.18475 5.65266 6.58229C4.2679 7.96705 4.19838 10.1849 5.47453 11.6498L11.9998 18.1854L18.5253 11.6498C19.8019 10.1844 19.7327 7.97072 18.3458 6.58093Z"
+                fill="white" fill-opacity="0.6" />
+        </svg>
+        <p>
+            Избранное
+        </p>
+    </div>
+</div>
+    <header class="">
+    <div class="header-overlay ">
+
+    </div>
+
+    <div class="flex header-top-container">
+        <div class="def_div">
+            <div class="city-cont" data-copy data-where-copy-id="header-menu-2" data-sort="1">
+                <svg class="city-svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.3308 1.75C12.4919 1.75 12.6225 1.88058 12.6225 2.04167C12.6225 2.09242 12.6092 2.1423 12.584 2.18637L10.5 5.83333L12.584 9.48027C12.6639 9.62016 12.6153 9.79831 12.4755 9.87822C12.4314 9.90342 12.3815 9.91667 12.3308 9.91667H2.33335V12.8333H1.16669V1.75H12.3308ZM10.823 2.91667H2.33335V8.75H10.823L9.15631 5.83333L10.823 2.91667Z"
+                        fill="white" />
+                </svg>
+                <div class="h2">
+                    Москва
+                </div>
+                <svg class="arrow-svg" width="5" height="8" viewBox="0 0 5 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                        stroke-linecap="square" />
+                </svg>
+            </div>
+            <ul class="header-menu-1" data-copy data-where-copy-id="header-menu-2" data-sort="30">
+                <li class="active">
+                    <a href="">
+                        О компании
+                        <svg class="arrow-svg" width="5" height="8" viewBox="0 0 5 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                                stroke-linecap="square" />
+                        </svg>
+                    </a>
+
+                </li>
+                <li class="">
+                    <a href="">
+                        Доставка и оплата
+                        <svg class="arrow-svg" width="5" height="8" viewBox="0 0 5 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                                stroke-linecap="square" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        Гарантия
+                        <svg class="arrow-svg" width="5" height="8" viewBox="0 0 5 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                                stroke-linecap="square" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        Сертификаты
+                        <svg class="arrow-svg" width="5" height="8" viewBox="0 0 5 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                                stroke-linecap="square" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        Качество
+                        <svg class="arrow-svg" width="5" height="8" viewBox="0 0 5 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                                stroke-linecap="square" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        Отзывы
+                        <svg class="arrow-svg" width="5" height="8" viewBox="0 0 5 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                                stroke-linecap="square" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="">
+                        Контакты
+                        <svg class="arrow-svg" width="5" height="8" viewBox="0 0 5 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                                stroke-linecap="square" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <a href="tel:88005500890" class="header-phone-1">
+                8(800 )550-08-90
+            </a>
+        </div>
+    </div>
+    <div class="flex header-bottom-container">
+        <div class="flex def_div">
+            <a href="/" class="logo-cont">
+                <img src="/img/logo.svg" alt="logo">
+                <div class="cont">
+                    <div class="h1">
+                        Дизель Деталь
+                    </div>
+                    <p class="subtitle">
+                        Запчасти для спецтехники
+                    </p>
+                </div>
+            </a>
+            <div class="help-cont-v1">
+                <div class="button catalog-btn" data-btn-catalog>
+                    <svg class="catalog-svg-close" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 4L4 16M4 4L16 16" stroke="white" stroke-width="1.5" />
+                    </svg>
+
+                    <svg class="catalog-svg-open" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.5 3.33337H17.5V5.00004H2.5V3.33337ZM2.5 9.16671H17.5V10.8334H2.5V9.16671ZM2.5 15H17.5V16.6667H2.5V15Z"
+                            fill="white" />
+                    </svg>
+                    <p>
+                        Каталог
+                    </p>
+                </div>
+                <div class="header-search" id="title-search">
+
+                    <form class="header-search_form" action="/search/index.php">
+                        <div class="cont_2"> <input id="title-search-input" type="text" name="q" value="" size="40"
+                                maxlength="150" autocomplete="off" placeholder="Поиск по сайту">
+                            <div class="cont_32">
+                                <button type="submit">
+                                    <div class="before-cont">
+
+                                    </div>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.7501 15.7501L12.1251 12.1251M14.0831 7.41656C14.0831 11.0984 11.0984 14.0831 7.41656 14.0831C3.73472 14.0831 0.75 11.0984 0.75 7.41656C0.75 3.73472 3.73472 0.75 7.41656 0.75C11.0984 0.75 14.0831 3.73472 14.0831 7.41656Z"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="square" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="search_rez">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="./img/fa692299f94bc766e8e6180574e401aebc92275c.png" alt="">
+                                            <div class="h2">
+                                                Датчик температуры САТ 264-4297, 130-9811, 197-8391
+                                            </div>
+                                            <div class="price">
+                                                3 000 ₽
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./img/fa692299f94bc766e8e6180574e401aebc92275c.png" alt="">
+                                            <div class="h2">
+                                                Датчик температуры САТ 264-4297, 130-9811, 197-8391
+                                            </div>
+                                            <div class="price">
+                                                3 000 ₽
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./img/fa692299f94bc766e8e6180574e401aebc92275c.png" alt="">
+                                            <div class="h2">
+                                                Датчик температуры САТ 264-4297, 130-9811, 197-8391
+                                            </div>
+                                            <div class="price">
+                                                3 000 ₽
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./img/fa692299f94bc766e8e6180574e401aebc92275c.png" alt="">
+                                            <div class="h2">
+                                                Датчик температуры САТ 264-4297, 130-9811, 197-8391
+                                            </div>
+                                            <div class="price">
+                                                3 000 ₽
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./img/fa692299f94bc766e8e6180574e401aebc92275c.png" alt="">
+                                            <div class="h2">
+                                                Датчик температуры САТ 264-4297, 130-9811, 197-8391
+                                            </div>
+                                            <div class="price">
+                                                3 000 ₽
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./img/fa692299f94bc766e8e6180574e401aebc92275c.png" alt="">
+                                            <div class="h2">
+                                                Датчик температуры САТ 264-4297, 130-9811, 197-8391
+                                            </div>
+                                            <div class="price">
+                                                3 000 ₽
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./img/fa692299f94bc766e8e6180574e401aebc92275c.png" alt="">
+                                            <div class="h2">
+                                                Датчик температуры САТ 264-4297, 130-9811, 197-8391
+                                            </div>
+                                            <div class="price">
+                                                3 000 ₽
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="./img/fa692299f94bc766e8e6180574e401aebc92275c.png" alt="">
+                                            <div class="h2">
+                                                Датчик температуры САТ 264-4297, 130-9811, 197-8391
+                                            </div>
+                                            <div class="price">
+                                                3 000 ₽
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a class="all-results" href="">
+                                    Все результаты
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="last-cont" data-copy data-where-copy-id="header-menu-2" data-sort="40">
+                <a class="link-cont">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853ZM18.827 6.1701C17.3279 4.66794 14.9076 4.60701 13.337 6.01687L12.0019 7.21524L10.6661 6.01781C9.09098 4.60597 6.67506 4.66808 5.17157 6.17157C3.68183 7.66131 3.60704 10.0473 4.97993 11.6232L11.9999 18.6543L19.0201 11.6232C20.3935 10.0467 20.319 7.66525 18.827 6.1701Z"
+                            fill="#484F55" />
+                    </svg>
+                    <p>
+                        Избранное
+                    </p>
+                    <svg class="arrow-svg" width="5" height="8" viewBox="0 0 5 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                            stroke-linecap="square" />
+                    </svg>
+                </a>
+                <a class="link-cont">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM6.00436 7.00265V13.0027H17.5163L19.3163 7.00265H6.00436ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z"
+                            fill="#484F55" />
+                    </svg>
+                    <p>
+                        Корзина
+                    </p>
+                    <svg class="arrow-svg" width="5" height="8" viewBox="0 0 5 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                            stroke-linecap="square" />
+                    </svg>
+                </a>
+            </div>
+
+            <div data-menu-open-btn class="menu-open-btn">
+                <svg class="btn-open" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.54272 5.70471H25.4572V8.02854H4.54272V5.70471ZM4.54272 13.8381H18.4857V16.1619H4.54272V13.8381ZM4.54272 21.9715H25.4572V24.2954H4.54272V21.9715Z"
+                        fill="#484F55" />
+                </svg>
+                <svg class="btn-close" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 7.04492L23.4099 22.9548M7.5 22.955L23.4099 7.04505" stroke="#121314"
+                        stroke-width="1.875" stroke-linecap="square" />
+                </svg>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="catalog-btn-hidden" data-catalog-mob-open-btn data-copy data-where-copy-id="header-menu-2"
+        data-sort="20">
+        <a>
+            Каталог
+        </a>
+        <svg class="arrow-svg" width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E" stroke-linecap="square" />
+        </svg>
+    </div>
+
+    <div class="header-hidden-cont-1" data-copy data-where-copy-id="header-menu-2" data-sort="50">
+        <div class="header-contacts-cont">
+            <div class="h3">
+                Контакты
+            </div>
+            <a href="tel:88005500890" class="header-phone-1">
+                +7(3462)55-08-90
+            </a>
+            <a href="tel:88005500890" class="header-phone-1">
+                +7(982)-515-2000
+            </a>
+        </div>
+        <div class="button call-btn" data-popup-open="popup-call-back">
+            Заказать звонок
+        </div>
+        <div class="last-cont-1">
+            <p class="contact-item">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3.02852 3.8031H16.9715C17.3993 3.8031 17.7461 4.14991 17.7461 4.57771V15.4222C17.7461 15.8501 17.3993 16.1969 16.9715 16.1969H3.02852C2.60071 16.1969 2.25391 15.8501 2.25391 15.4222V4.57771C2.25391 4.14991 2.60071 3.8031 3.02852 3.8031ZM16.1969 7.08584L10.0556 12.5856L3.80313 7.06881V14.6476H16.1969V7.08584ZM4.19931 5.35232L10.048 10.5128L15.8104 5.35232H4.19931Z"
+                        fill="#767D83" />
+                </svg>
+                zapros-detali@mail.ru
+            </p>
+            <p class="contact-item">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.0001 19.0846L5.07047 14.155C2.34793 11.4324 2.34793 7.01835 5.07047 4.29581C7.793 1.57327 12.2071 1.57327 14.9297 4.29581C17.6522 7.01835 17.6522 11.4324 14.9297 14.155L10.0001 19.0846ZM13.8341 13.0595C15.9517 10.942 15.9517 7.5088 13.8341 5.39127C11.7167 3.27374 8.28346 3.27374 6.16593 5.39127C4.0484 7.5088 4.0484 10.942 6.16593 13.0595L10.0001 16.8937L13.8341 13.0595ZM10.0001 10.7746C9.14442 10.7746 8.45083 10.081 8.45083 9.2254C8.45083 8.36979 9.14442 7.67618 10.0001 7.67618C10.8557 7.67618 11.5493 8.36979 11.5493 9.2254C11.5493 10.081 10.8557 10.7746 10.0001 10.7746Z"
+                        fill="#767D83" />
+                </svg>
+                г.Сургут, ул. Аграрная 5
+            </p>
+        </div>
+    </div>
+
+    <div class="hiiden-container-menu">
+        <div class="header-menu-1-copy" data-paste-container-id="header-menu-1">
+
+        </div>
+
+        <div class="header-menu-2-copy" data-paste-container-id="header-menu-2">
+
+        </div>
+    </div>
+
+
+</header>
+
+<div class="catalog-menu-overlay" data-catalog-menu-overlay>
+
+</div>
+<div class="catalog-menu no-header-menu" data-catalog-menu data-copy data-where-copy-id="header-menu-1" data-sort="1">
+    <div class="help-cont">
+        <ul class="catalog-menu-level-2">
+            <li class="catalog-menu-el drop_2 active">
+                <div data-href="/katalog/dvigateli/" class="cont_2"><a href="/katalog/dvigateli/">Двигатели и
+                        компоненты</a><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square" stroke-linejoin="round">
+                        </path>
+                    </svg></div>
+                <div class="catalog-menu-level-3-container">
+                    <div data-menu-back="" class="header-mob-menu-back-container"><svg width="18" height="14"
+                            viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315" stroke="#76746E"
+                                stroke-linecap="square"></path>
+                        </svg>
+                        <p> Двигатели и компоненты</p>
+                    </div>
+                    <ul class="catalog-menu-level-3">
+                        <li class="catalog-menu-el drop_3">
+                            <div data-href="/katalog/dvigateli/" class="cont_3"><a href="/katalog/dvigateli/">Двигатели
+                                    в
+                                    сборе</a><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square"
+                                        stroke-linejoin="round">
+                                    </path>
+                                </svg></div>
+                            <div class="catalog-menu-level-4-container">
+                                <div data-menu-back="" class="header-mob-menu-back-container"><svg width="18"
+                                        height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315"
+                                            stroke="#76746E" stroke-linecap="square"></path>
+                                    </svg>
+                                    <p> Двигатели в сборе</p>
+                                </div>
+                                <ul class="catalog-menu-level-4">
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-cummins/">Комплектные
+                                            двигатели Cummins</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-caterpillar/">
+                                            Комплектные
+                                            двигатели Caterpillar
+                                            Комплектные
+                                            двигатели Caterpillar
+                                            Комплектные
+                                            двигатели Caterpillar
+                                        </a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-deutz/">Комплектные
+                                            двигатели Deutz</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-yandex/">Комплектные
+                                            двигатели ЯМЗ</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-cummins/">Комплектные
+                                            двигатели Cummins</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-caterpillar/">Комплектные
+                                            двигатели Caterpillar</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-deutz/">Комплектные
+                                            двигатели Deutz</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-yandex/">Комплектные
+                                            двигатели ЯМЗ</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-cummins/">Комплектные
+                                            двигатели Cummins</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-caterpillar/">Комплектные
+                                            двигатели Caterpillar</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-deutz/">Комплектные
+                                            двигатели Deutz</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-yandex/">Комплектные
+                                            двигатели ЯМЗ</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-caterpillar/">
+                                            Комплектные
+                                            двигатели Caterpillar
+                                            Комплектные
+                                            двигатели Caterpillar
+                                            Комплектные
+                                            двигатели Caterpillar
+                                        </a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-deutz/">Комплектные
+                                            двигатели Deutz</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-yandex/">Комплектные
+                                            двигатели ЯМЗ</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-cummins/">Комплектные
+                                            двигатели Cummins</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-caterpillar/">Комплектные
+                                            двигатели Caterpillar</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-deutz/">Комплектные
+                                            двигатели Deutz</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-yandex/">Комплектные
+                                            двигатели ЯМЗ</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-cummins/">Комплектные
+                                            двигатели Cummins</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-caterpillar/">Комплектные
+                                            двигатели Caterpillar</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-deutz/">Комплектные
+                                            двигатели Deutz</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/komplektnye-dvigateli-yandex/">Комплектные
+                                            двигатели ЯМЗ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="catalog-menu-el drop_3">
+                            <div data-href="/katalog/dvigateli/zapchasti-dvigatelya/" class="cont_3">
+                                <a href="/katalog/dvigateli/zapchasti-dvigatelya/">Запчасти для двигателя</a>
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="catalog-menu-level-4-container">
+                                <div data-menu-back="" class="header-mob-menu-back-container">
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315"
+                                            stroke="#76746E" stroke-linecap="square"></path>
+                                    </svg>
+                                    <p>Запчасти для двигателя</p>
+                                </div>
+                                <ul class="catalog-menu-level-4">
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/zapchasti-dvigatelya/porshni/">Поршни и поршневые
+                                            кольца</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/zapchasti-dvigatelya/klapana/">Клапаны и
+                                            направляющие</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/zapchasti-dvigatelya/prokladki/">Прокладки и
+                                            сальники</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/zapchasti-dvigatelya/shatuny/">Шатуны и вкладыши</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="catalog-menu-el drop_3">
+                            <div data-href="/katalog/dvigateli/toplivnaya-sistema/" class="cont_3">
+                                <a href="/katalog/dvigateli/toplivnaya-sistema/">Топливная система</a>
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="catalog-menu-level-4-container">
+                                <div data-menu-back="" class="header-mob-menu-back-container">
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315"
+                                            stroke="#76746E" stroke-linecap="square"></path>
+                                    </svg>
+                                    <p>Топливная система</p>
+                                </div>
+                                <ul class="catalog-menu-level-4">
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/toplivnaya-sistema/toplivnye-nasosy/">Топливные
+                                            насосы</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/toplivnaya-sistema/forcunki/">Форсунки</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/toplivnaya-sistema/filtry/">Топливные фильтры</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/dvigateli/toplivnaya-sistema/obratka/">Обратка и
+                                            комплектующие</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="catalog-menu-el drop_2">
+                <div data-href="/katalog/gidravlika/" class="cont_2"><a href="/katalog/gidravlika/">Гидравлика</a><svg
+                        width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square" stroke-linejoin="round">
+                        </path>
+                    </svg></div>
+                <div class="catalog-menu-level-3-container">
+                    <div data-menu-back="" class="header-mob-menu-back-container"><svg width="18" height="14"
+                            viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315" stroke="#76746E"
+                                stroke-linecap="square"></path>
+                        </svg>
+                        <p> Гидравлика</p>
+                    </div>
+                    <ul class="catalog-menu-level-3">
+                        <li class="catalog-menu-el drop_3">
+                            <div data-href="/katalog/gidravlika/" class="cont_3"><a href="/katalog/gidravlika/">Насосы и
+                                    моторы</a><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square"
+                                        stroke-linejoin="round">
+                                    </path>
+                                </svg></div>
+                            <div class="catalog-menu-level-4-container">
+                                <div data-menu-back="" class="header-mob-menu-back-container"><svg width="18"
+                                        height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315"
+                                            stroke="#76746E" stroke-linecap="square"></path>
+                                    </svg>
+                                    <p> Насосы и моторы</p>
+                                </div>
+                                <ul class="catalog-menu-level-4">
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/gidravlika/nasosy-yale/">Насосы Yale</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/gidravlika/nasosy-eaton/">Насосы Eaton</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/gidravlika/nasosy-bosch-rexroth/">Насосы Bosch Rexroth</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/gidravlika/gidromotory/">Гидромоторы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="catalog-menu-el drop_2">
+                <div data-href="/katalog/transmissiya/" class="cont_2"><a
+                        href="/katalog/transmissiya/">Трансмиссия</a><svg width="10" height="6" viewBox="0 0 10 6"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square" stroke-linejoin="round">
+                        </path>
+                    </svg></div>
+                <div class="catalog-menu-level-3-container">
+                    <div data-menu-back="" class="header-mob-menu-back-container"><svg width="18" height="14"
+                            viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315" stroke="#76746E"
+                                stroke-linecap="square"></path>
+                        </svg>
+                        <p> Трансмиссия</p>
+                    </div>
+                    <ul class="catalog-menu-level-3">
+                        <li class="catalog-menu-el drop_3">
+                            <div data-href="/katalog/transmissiya/kpp/" class="cont_3"><a
+                                    href="/katalog/transmissiya/kpp/">Коробки передач</a><svg width="10" height="6"
+                                    viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square"
+                                        stroke-linejoin="round">
+                                    </path>
+                                </svg></div>
+                            <div class="catalog-menu-level-4-container">
+                                <div data-menu-back="" class="header-mob-menu-back-container"><svg width="18"
+                                        height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315"
+                                            stroke="#76746E" stroke-linecap="square"></path>
+                                    </svg>
+                                    <p> Коробки передач</p>
+                                </div>
+                                <ul class="catalog-menu-level-4">
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/transmissiya/kpp/allison/">Коробки передач Allison</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/transmissiya/kpp/zf/">Коробки передач ZF</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/transmissiya/kpp/knorr-bremse/">Коробки передач
+                                            Knorr-Bremse</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="catalog-menu-el drop_2">
+                <div data-href="/katalog/khodovaya/" class="cont_2"><a href="/katalog/khodovaya/">Ходовая
+                        часть</a><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square" stroke-linejoin="round">
+                        </path>
+                    </svg></div>
+                <div class="catalog-menu-level-3-container">
+                    <div data-menu-back="" class="header-mob-menu-back-container"><svg width="18" height="14"
+                            viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315" stroke="#76746E"
+                                stroke-linecap="square"></path>
+                        </svg>
+                        <p> Ходовая часть</p>
+                    </div>
+                    <ul class="catalog-menu-level-3">
+                        <li class="catalog-menu-el drop_3">
+                            <div data-href="/katalog/khodovaya/" class="cont_3"><a href="/katalog/khodovaya/">Колеса,
+                                    оси,
+                                    подвеска</a><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square"
+                                        stroke-linejoin="round">
+                                    </path>
+                                </svg></div>
+                            <div class="catalog-menu-level-4-container">
+                                <div data-menu-back="" class="header-mob-menu-back-container"><svg width="18"
+                                        height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315"
+                                            stroke="#76746E" stroke-linecap="square"></path>
+                                    </svg>
+                                    <p> Колеса, оси, подвеска</p>
+                                </div>
+                                <ul class="catalog-menu-level-4">
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/khodovaya/osy-kolesnye/">Оси колёсные</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/khodovaya/podshipniki-stupits/">Подшипники и ступицы</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/khodovaya/rulevoyye-tyagi/">Рулевые тяги и наконечники</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/khodovaya/amortizatory-i-resory/">Амортизаторы и
+                                            рессоры</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="catalog-menu-el drop_2 ">
+                <div data-href="/katalog/elektrika/" class="cont_2"><a href="/katalog/elektrika/">Электрика и
+                        электроника</a><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square" stroke-linejoin="round">
+                        </path>
+                    </svg></div>
+                <div class="catalog-menu-level-3-container">
+                    <div data-menu-back="" class="header-mob-menu-back-container"><svg width="18" height="14"
+                            viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315" stroke="#76746E"
+                                stroke-linecap="square"></path>
+                        </svg>
+                        <p> Электрика и электроника</p>
+                    </div>
+                    <ul class="catalog-menu-level-3">
+                        <li class="catalog-menu-el drop_3 active">
+                            <div data-href="/katalog/elektrika/" class="cont_3"><a href="/katalog/elektrika/">Стартеры и
+                                    генераторы</a><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square"
+                                        stroke-linejoin="round">
+                                    </path>
+                                </svg></div>
+                            <div class="catalog-menu-level-4-container">
+                                <div data-menu-back="" class="header-mob-menu-back-container"><svg width="18"
+                                        height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315"
+                                            stroke="#76746E" stroke-linecap="square"></path>
+                                    </svg>
+                                    <p> Стартеры и генераторы</p>
+                                </div>
+                                <ul class="catalog-menu-level-4">
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/elektrika/startery-bosch/">Стартеры Bosch</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/elektrika/startery-denso/">Стартеры Denso</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/elektrika/generatorы-bosch/">Генераторы Bosch</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/elektrika/generatorы-leroy-somer/">Генераторы Leroy
+                                            Somer</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="catalog-menu-el drop_3">
+                            <div data-href="/katalog/elektrika/sensory/" class="cont_3">
+                                <a href="/katalog/elektrika/sensory/">Датчики и сенсоры</a>
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="catalog-menu-level-4-container">
+                                <div data-menu-back="" class="header-mob-menu-back-container">
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315"
+                                            stroke="#76746E" stroke-linecap="square"></path>
+                                    </svg>
+                                    <p>Датчики и сенсоры</p>
+                                </div>
+                                <ul class="catalog-menu-level-4">
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/elektrika/sensory/datchiki-davleniya/">Датчики давления</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/elektrika/sensory/datchiki-temperatury/">Датчики
+                                            температуры</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/elektrika/sensory/datchiki-urovnya/">Датчики уровня</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="catalog-menu-el drop_3">
+                            <div data-href="/katalog/elektrika/provodka/" class="cont_3">
+                                <a href="/katalog/elektrika/provodka/">Проводка и разъемы</a>
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1 5 5 1 1" stroke="#76746E" stroke-linecap="square"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="catalog-menu-level-4-container">
+                                <div data-menu-back="" class="header-mob-menu-back-container">
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.65674 7H16.6567M6.65685 12.6569 1 7 6.65685 1.34315"
+                                            stroke="#76746E" stroke-linecap="square"></path>
+                                    </svg>
+                                    <p>Проводка и разъемы</p>
+                                </div>
+                                <ul class="catalog-menu-level-4">
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/elektrika/provodka/zapchasti-provodki/">Запчасти жгутов
+                                            проводки</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/elektrika/provodka/razemy/">Разъемы</a>
+                                    </li>
+                                    <li class="catalog-menu-el no-drop_4">
+                                        <a href="/katalog/elektrika/provodka/klemmy/">Клеммы и наконечники</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="catalog-menu-el active no-drop_3">
+                            <a href="">
+                                Блоки управления
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+    <main>
+        <div class="bread flex padding v2" id="bread">
+            <ul class="def_div">
+                <li>
+
+                    <a href="/" title="Главная" itemprop="item">
+                        Главная
+                    </a>
+                </li>
+                <li>/</li>
+                <li>
+                    Каталог
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-title v2">
+            <h1 class="title ">
+                Каталог
+            </h1>
+        </div>
+
+        <section class='padding flex main-top-section'>
+    <div class='def_div main-top v2'>
+
+        <ul class=' main-menu'>
+    <li>
+        <a href="/">
+            <p>Гидравлика</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/elektrooborudovanie/">
+            <p>Электрооборудование</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/datchiki/">
+            <p>Датчики</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/remkomplekty/">
+            <p>Ремкомплекты</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/palcy-i-vtulki/">
+            <p>Пальцы и втулки</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/patrubki/">
+            <p>Патрубки</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/radiatory/">
+            <p>Радиаторы</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/koronki/">
+            <p>Коронки</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/reduktory-i-komplektuyuschie/">
+            <p>Редукторы и комплектующие</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/gidromotory-i-komplektuyuschie/">
+            <p>Гидромоторы и комплектующие</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/flancy-mufty/">
+            <p>Фланцы, муфты</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/karmany-i-krestoviny/">
+            <p>Карданы и крестовины</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/remni/">
+            <p>Ремни</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/stekla-zerkala/">
+            <p>Стекла, зеркала</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/kuzovnye-detali/">
+            <p>Кузовные детали</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/detali-dvigatelya/">
+            <p>Детали двигателя</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/toplivnaya-sistema/">
+            <p>Топливная система</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/glushiteli/">
+            <p>Глушители</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/podshipniki/">
+            <p>Подшипники</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/o-kolca/">
+            <p>O-кольца</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/salniki/">
+            <p>Сальники</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/filtry/">
+            <p>Фильтры</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/khodovaya/">
+            <p>Ходовая</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a href="/prochie-tovary/">
+            <p>Прочие товары</p>
+            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.707218 0.707095L3.53564 3.53552L0.707217 6.36395" stroke="#93999E"
+                    stroke-linecap="square" />
+            </svg>
+        </a>
+    </li>
+</ul>
+        <div class="main-content">
+        <div class='def_div catalog-list '>
+        <a class="catalog-list-items">
+            <img src="./img/1c8d3e75d8215a723e27abb5d7d009d48cccd416.jpg" alt="item">
+            <div class="h3">
+                Гидравлика
+            </div>
+        </a>
+        <a class="catalog-list-items">
+            <img src="./img/1c8d3e75d8215a723e27abb5d7d009d48cccd416.jpg" alt="item">
+            <div class="h3">
+                Гидравлика
+            </div>
+        </a>
+        <a class="catalog-list-items">
+            <img src="./img/1c8d3e75d8215a723e27abb5d7d009d48cccd416.jpg" alt="item">
+            <div class="h3">
+                Гидравлика
+            </div>
+        </a>
+        <a class="catalog-list-items">
+            <img src="./img/1c8d3e75d8215a723e27abb5d7d009d48cccd416.jpg" alt="item">
+            <div class="h3">
+                Гидравлика
+            </div>
+        </a>
+        <a class="catalog-list-items">
+            <img src="./img/1c8d3e75d8215a723e27abb5d7d009d48cccd416.jpg" alt="item">
+            <div class="h3">
+                Гидравлика
+            </div>
+        </a>
+        <a class="catalog-list-items">
+            <img src="./img/1c8d3e75d8215a723e27abb5d7d009d48cccd416.jpg" alt="item">
+            <div class="h3">
+                Гидравлика
+            </div>
+        </a>
+        <a class="catalog-list-items">
+            <img src="./img/1c8d3e75d8215a723e27abb5d7d009d48cccd416.jpg" alt="item">
+            <div class="h3">
+                Гидравлика
+            </div>
+        </a>
+        <a class="catalog-list-items">
+            <img src="./img/1c8d3e75d8215a723e27abb5d7d009d48cccd416.jpg" alt="item">
+            <div class="h3">
+                Гидравлика
+            </div>
+        </a>
+        <a class="catalog-list-items">
+            <img src="./img/1c8d3e75d8215a723e27abb5d7d009d48cccd416.jpg" alt="item">
+            <div class="h3">
+                Гидравлика
+            </div>
+        </a>
+        <a class="catalog-list-items">
+            <img src="./img/1c8d3e75d8215a723e27abb5d7d009d48cccd416.jpg" alt="item">
+            <div class="h3">
+                Гидравлика
+            </div>
+        </a>
+        <a class="catalog-list-items">
+            <img src="./img/1c8d3e75d8215a723e27abb5d7d009d48cccd416.jpg" alt="item">
+            <div class="h3">
+                Гидравлика
+            </div>
+        </a>
+        <a class="catalog-list-items">
+            <img src="./img/1c8d3e75d8215a723e27abb5d7d009d48cccd416.jpg" alt="item">
+            <div class="h3">
+                Гидравлика
+            </div>
+        </a>
+    </div>
+    <section class='padding flex section-seo-text-section'>
+    <div class='def_div section-seo-text'>
+        <div class="def_title">
+            <h2>
+                Заголовок SEO категории
+            </h2>
+        </div>
+        <div class="default">
+            <p>
+                Добро пожаловать в ООО "Дизель Деталь" – вашего надежного партнера в мире запчастей для спецтехники. Мы
+                предлагаем широкий ассортимент высококачественных запчастей от ведущих мировых производителей. На нашем
+                сайте вы найдете все необходимое для ремонта и обслуживания вашей техники – от радиаторов и моторов
+                стеклоочистителя до датчиков и ремкомплектов. Обеспечьте бесперебойную работу вашей техники с запчастями
+                от ООО "Дизель Деталь".
+            </p>
+            <p>
+                Клиенты выбирают ООО "Дизель Деталь", потому что мы предлагаем не только широкий ассортимент запчастей
+                высокого качества, но и выдающийся уровень обслуживания. Мы гарантируем оперативную доставку по всей
+                России, профессиональную поддержку и консультации, а также конкурентоспособные цены. Наши запчасти
+                подходят для широкого ряда спецтехники, и мы постоянно расширяем наш ассортимент, чтобы удовлетворять
+                все потребности наших клиентов.
+            </p>
+            <p>
+                Выбирайте качество и надежность с ООО "Дизель Деталь". Свяжитесь с нами сегодня, чтобы узнать больше о
+                наших продуктах и услугах, или сделайте заказ прямо на сайте!
+            </p>
+        </div>
+    </div>
+</section>
+</div>
+
+    </div>
+</section>
+    </main>
+    <footer>
+    <div class="padding footer-top">
+        <div class="def_div default-container">
+            <div class="footer-menu footer-check-height-cont ">
+                <div class="footer-menu_cont">
+                    <div class="h2">
+                        Дизель Деталь
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.19235 0.707066L4.94971 4.94971L0.707066 0.707066" stroke="#93999E"
+                                stroke-linecap="square" />
+                        </svg>
+                    </div>
+                    <ul data-id="0" class="footer-check-height ">
+                        <li class="">
+                            <a href="">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                Бренды
+                            </a>
+                        </li>
+                    </ul>
+                    <div data-id="0-footer-menu" class="more-height invise">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                                    fill="#484F55"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="footer-menu_cont ">
+                    <div class="h2">
+                        Покупателям
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.19235 0.707066L4.94971 4.94971L0.707066 0.707066" stroke="#93999E"
+                                stroke-linecap="square" />
+                        </svg>
+
+                    </div>
+                    <ul data-id="1" class="footer-check-height ">
+                        <li class="">
+                            <a href="">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                Гарантия
+                            </a>
+                        </li>
+
+                        <li class="">
+                            <a href="">
+                                Сертификаты
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                Качество
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                Гарантия
+                            </a>
+                        </li>
+
+
+                        <li class="">
+                            <a href="">
+                                Качество
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <div data-id="1-footer-menu" class="more-height invise">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                                    fill="#484F55"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="footer-menu_cont v2">
+                    <div class="h2">
+                        Каталог запчастей
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.19235 0.707066L4.94971 4.94971L0.707066 0.707066" stroke="#93999E"
+                                stroke-linecap="square" />
+                        </svg>
+                    </div>
+                    <div class="flex-cont">
+                        <div class="flex">
+                            <ul data-id="2" class="footer-check-height ">
+                                <li class="">
+                                    <a href="">
+                                        Гидравлика
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Гидромоторы и комплектующие
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="">
+                                        Ремкомплекты
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Пальцы и втулки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Патрубки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Радиаторы
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Ремни
+                                    </a>
+                                </li>
+                            </ul>
+                            <div data-id="2-footer-menu" class="more-height invise">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                                            fill="#484F55"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <ul data-id="3" class="footer-check-height ">
+                                <li class="">
+                                    <a href="">
+                                        Гидравлика
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Датчики
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="">
+                                        Ремкомплекты
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Пальцы и втулки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Патрубки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Радиаторы
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Ремни
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Гидравлика
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Датчики
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="">
+                                        Ремкомплекты
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Пальцы и втулки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Патрубки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Радиаторы
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Ремни
+                                    </a>
+                                </li>
+                            </ul>
+                            <div data-id="3-footer-menu" class="more-height invise">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                                            fill="#484F55"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <ul data-id="4" class="footer-check-height ">
+                                <li class="">
+                                    <a href="">
+                                        Гидравлика
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Датчики
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="">
+                                        Ремкомплекты
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Пальцы и втулки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Патрубки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Датчики
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="">
+                                        Ремкомплекты
+                                    </a>
+                                </li>
+                                <li class=" active">
+                                    <a href="">
+                                        Пальцы и втулки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Патрубки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Радиаторы
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Ремни
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Ремкомплекты
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Пальцы и втулки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Патрубки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Датчики
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="">
+                                        Ремкомплекты
+                                    </a>
+                                </li>
+                                <li class=" active">
+                                    <a href="">
+                                        Пальцы и втулки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Патрубки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Радиаторы
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Ремни
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Ремкомплекты
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Пальцы и втулки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Патрубки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Датчики
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="">
+                                        Ремкомплекты
+                                    </a>
+                                </li>
+                                <li class=" active">
+                                    <a href="">
+                                        Пальцы и втулки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Патрубки
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Радиаторы
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        Ремни
+                                    </a>
+                                </li>
+                            </ul>
+                            <div data-id="4-footer-menu" class="more-height invise">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                                            fill="#484F55"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-right_cont">
+                <div class="h3">
+                    Контакты
+                </div>
+                <a class="header-phone" href="tel:+7(3462)55-08-90">
+                    +7(3462)55-08-90
+                </a>
+                <a class="header-phone" href="tel:+7(982)515-2000">
+                    +7(982)515-2000
+                </a>
+                <a data-popup-open="popup-call-back" class="button">
+                    Заказать звонок
+                </a>
+                <div class="last-cont-1">
+                    <p class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.02852 3.8031H16.9715C17.3993 3.8031 17.7461 4.14991 17.7461 4.57771V15.4222C17.7461 15.8501 17.3993 16.1969 16.9715 16.1969H3.02852C2.60071 16.1969 2.25391 15.8501 2.25391 15.4222V4.57771C2.25391 4.14991 2.60071 3.8031 3.02852 3.8031ZM16.1969 7.08584L10.0556 12.5856L3.80313 7.06881V14.6476H16.1969V7.08584ZM4.19931 5.35232L10.048 10.5128L15.8104 5.35232H4.19931Z"
+                                fill="#FFFFFF80" />
+                        </svg>
+                        zapros-detali@mail.ru
+                    </p>
+                    <p class="contact-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.0001 19.0846L5.07047 14.155C2.34793 11.4324 2.34793 7.01835 5.07047 4.29581C7.793 1.57327 12.2071 1.57327 14.9297 4.29581C17.6522 7.01835 17.6522 11.4324 14.9297 14.155L10.0001 19.0846ZM13.8341 13.0595C15.9517 10.942 15.9517 7.5088 13.8341 5.39127C11.7167 3.27374 8.28346 3.27374 6.16593 5.39127C4.0484 7.5088 4.0484 10.942 6.16593 13.0595L10.0001 16.8937L13.8341 13.0595ZM10.0001 10.7746C9.14442 10.7746 8.45083 10.081 8.45083 9.2254C8.45083 8.36979 9.14442 7.67618 10.0001 7.67618C10.8557 7.67618 11.5493 8.36979 11.5493 9.2254C11.5493 10.081 10.8557 10.7746 10.0001 10.7746Z"
+                                fill="#FFFFFF80" />
+                        </svg>
+                        г.Сургут, ул. Аграрная 5
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="padding footer-bottom">
+        <div class="def_div default-container">
+            <div class="footer-bottom-left">
+                <p class="footer-last-text">
+                    © 2018 - 2025 г. Дизель деталь запчасти для спецтехники
+                </p>
+            </div>
+            <div class="footer-bottom-right">
+                <a class="footer-last-text" href="">
+                    Политика конфиденциальности
+                </a>
+                <a class="footer-last-text" href="">
+                    Политика обработки персональных данных
+                </a>
+                <a class="footer-last-text" href="">
+                    Публичная оферта
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="./js/addSwiper.js"></script>
+    <script src="./js/copyElements.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+
+</html>

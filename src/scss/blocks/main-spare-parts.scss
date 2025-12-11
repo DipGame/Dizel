@@ -1,0 +1,42 @@
+.main-spare-parts-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.main-spare-parts-item {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid #E5E7E8;
+
+    img {
+        aspect-ratio: 160/118;
+        object-fit: contain;
+        width: 100%;
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 720px) {
+    .main-spare-parts-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .main-spare-parts {
+        padding-top: 50px;
+    }
+
+    .main-spare-parts-item {
+        padding: 15px;
+    
+        img {
+            max-width: 106px;
+        }
+    }
+}

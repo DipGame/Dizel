@@ -1,0 +1,16 @@
+.main-content {
+    width: auto;
+    max-width: 1058px;
+    overflow: hidden;
+    padding-bottom: 20px;
+
+    &.about-content {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-content {
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,29 @@
+.main-top {
+    display: flex;
+    gap: 24px;
+    padding-top: 24px;
+    overflow: hidden;
+
+    &.v2 {
+        padding-top: 0;
+    }
+
+    &.v10 {
+        gap: 48px;
+        margin-bottom: 90px;
+    }
+}
+
+@media (max-width: 970px) {
+
+    .main-top,
+    .main-top-section {
+        padding: 0;
+    }
+
+    .main-top {
+        &.v10 {
+            margin-bottom: 60px;
+        }
+    }
+}

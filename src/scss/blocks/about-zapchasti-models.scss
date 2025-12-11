@@ -1,0 +1,20 @@
+.about-zapchasti-models {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0%;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-zapchasti-models {
+        p {
+            font-size: 14px;
+        }
+    }
+}
