@@ -1,7 +1,7 @@
-https://dipgame.github.io/BioMed/
-https://dipgame.github.io/BioMed/catalog.html
-https://dipgame.github.io/BioMed/section.html
-https://dipgame.github.io/BioMed/detail.html
-https://dipgame.github.io/BioMed/basket.html
-https://dipgame.github.io/BioMed/basket-pay.html
-https://dipgame.github.io/BioMed/about.html
+https://dipgame.github.io/Dizel/
+https://dipgame.github.io/Dizel/catalog.html
+https://dipgame.github.io/Dizel/section.html
+https://dipgame.github.io/Dizel/detail.html
+https://dipgame.github.io/Dizel/basket.html
+https://dipgame.github.io/Dizel/basket-pay.html
+https://dipgame.github.io/Dizel/about.html
